@@ -5,8 +5,9 @@ mkdir /tmp/cyf
 cp -r * /tmp/cyf/
 cd /tmp/cyf
 
-echo `dirname $0`
-python `dirname $0`/compile_cython_files.py build_ext --inplace
+ABSOLUTE_PATH="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/$(basename "${BASH_SOURCE[0]}")"
+echo $ABSOLUTE_PATH
+python $ABSOLUTE_PATH/compile_cython_files.py build_ext --inplace
 
 cd -
 
