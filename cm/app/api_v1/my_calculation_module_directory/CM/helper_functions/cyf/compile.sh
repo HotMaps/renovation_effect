@@ -1,9 +1,11 @@
+#!/bin/bash
+
 rm -r /tmp/cyf
 mkdir /tmp/cyf
 cp -r * /tmp/cyf/
 cd /tmp/cyf
 
-echo `dirname $0`/
+echo `dirname $0`
 python `dirname $0`/compile_cython_files.py build_ext --inplace
 
 cd -
