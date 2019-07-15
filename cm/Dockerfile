@@ -16,6 +16,7 @@ WORKDIR /cm
 RUN chmod u+x /cm/wait-for-it.sh
 
 # Compile cython files
+RUN chmod u+x ./app/api_v1/my_calculation_module_directory/CM/helper_functions/cyf/compile_cython.sh
 RUN ./app/api_v1/my_calculation_module_directory/CM/helper_functions/cyf/compile_cython.sh
 
 # Start server
