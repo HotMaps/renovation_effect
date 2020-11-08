@@ -8,8 +8,6 @@ from datetime import datetime
 
 
 
-
-
 #path = os.path.dirname(os.path.abspath(__file__))
 SD = "my_calculation_module_directory"
 path = os.path.dirname(os.path.abspath(__file__)).split(SD)[0] + "/%s" % SD
