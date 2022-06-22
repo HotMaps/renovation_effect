@@ -19,7 +19,7 @@ amqp==2.4.0
 cython==0.29.12
 scipy
 pandas==1.0.4
-numpy==1.17.5
+numpy==1.22.0
 networkx
 gdal
 osr
